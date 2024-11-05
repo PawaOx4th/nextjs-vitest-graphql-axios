@@ -8,7 +8,10 @@ const apiServices = createClient({
       method: "post",
       url: "https://countries.trevorblades.com/",
       data: operation,
-    }).then((res) => res.data);
+    }).then((res) => {
+      console.log(`[LOG] 🟡   :`, res.data);
+      return res.data;
+    });
   },
 });
 

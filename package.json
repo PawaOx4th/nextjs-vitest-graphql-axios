@@ -2,6 +2,7 @@
   "name": "nextjs-vitest",
   "version": "0.1.0",
   "private": true,
+  "types": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,9 +11,10 @@
     "test": "vitest"
   },
   "dependencies": {
+    "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "next": "15.0.2"
+    "vite-tsconfig-paths": "^5.1.0"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
